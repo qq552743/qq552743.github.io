@@ -1837,7 +1837,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #593cab;
+  background: #f6b1ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2810,12 +2810,12 @@ body {
   background-position: center;
 }
 @font-face {
-  font-family: hanyi;
-  src: url("/fonts/hanyi.ttf");
+  font-family: HYXingKaiJ;
+  src: url("/fonts/hyi1gjm.ttf");
 }
 .site-title {
   font-size: 40px !important;
-  font-family: 'hanyi' !important;
+  font-family: 'HYXingKaiJ' !important;
 }
 .post-body p a {
   color: #0593d3;

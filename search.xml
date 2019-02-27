@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2F2019%2F02%2F26%2Fcategories-1%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[Hexo 基本教程]]></title>
+    <url>%2F2019%2F02%2F27%2FHexo%20%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[[TOC] Hexo 基本教程常用命令 基本操作访问模式：本地调试：http://localhost:4000 域：http://huanglei520.xyz 调试与坏境安装与调试npm install hexo-cli -g//安装hexo 此外npm install -g hexo-cli hexo init blog//初始化安装博客文件夹 cd blog || cd ..\//进入命令 //返回上一文件夹 npm installhexo server npm list hexo-deployer-gitgit config –global credential.helper wincredssh-keygen -t rsa –C “rockinghl@163.com”//密匙，需要授权的话，可再打该命令 Git上传/推送git init//初始化成可管理的本地仓库 ，跟踪管理版本 git add xxx//添加文件到暂存区 （如svn的添加） git add .​ //添加所有未修改的文件（有空格 + 点号） git commit -m “注释信息”//可中文 空格 git status//查看状态 初次修改前需要pull ，之后每次提交需要查看 释义： 在主支干上，有工作记录未提交 git remote add origin https://github.com/qq552743/qq552743.github.io//连接远程仓库 git push -u origin master//把本地内容提交到远程仓库的主干上 git push origin master 加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。 eg: git diff readme.txt​ //查看文件 如上可以看到，readme.txt文件内容从一行11111111改成 二行 添加了一行22222222内容。 cat xxxxx.xxx//查看文件内容 git log//查看历史信息 rm//删除命令 需要删下层得进入文件夹下 git checkout – xxx//恢复命令 下载/克隆/拉取git clone https://github.com/qq552743/qq552743.github.io//拉取 这是基于有环境下，如果无环境，需要走安装步骤 eg:https://blog.csdn.net/baozhiqiangjava/article/details/81106046?utm_source=blogxgwz3 分支git branch xx//查看当前连接分支 git branch -a//查看所有分支 git branch hexo//创建分支 git checkout -b hexo//创建+切换 到该hexo分支 git checkout master \ hexo//切换到主分支 \ 分支 git merge xxx//合并某分支内容到当前*分支上 git branch -d xxx//删除分支 其他注意项git pull –rebase origin master在你准备上传你的项目之前，最好更新一下项目，确保没有和远程仓库的代码有冲突]]></content>
+      <tags>
+        <tag>-命令格式 -教程</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2F2019%2F02%2F26%2Fcategories%2F</url>
-    <content type="text"><![CDATA[hexo new categories INFO Created: D:\blog\blog\qq552743.github.io.git\sourc e\_posts\categories.md]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[page]]></title>
-    <url>%2F2019%2F02%2F26%2Fpage%2F</url>
-    <content type="text"><![CDATA[hexo new page INFO Created: D:\blog\blog\qq552743.github.io.git\sourc e\_posts\page.md]]></content>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F02%2F26%2F%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 这是我的博客Create a new post 1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
     <title></title>
@@ -21,22 +19,12 @@
     <content type="text"><![CDATA[常用颜色值速查 ↓ 91种color –by huanglei ↓ red green blue magenta yellow chocolate black aquamarine lime fuchsia brass azure brown bronze deeppink aliceblue gray copper coral feldspar orange orchid pink plum quartz purple aliceblue antiquewith blanchedalmond blueviolet beige burlywood bisque cadetblue pink saddlebrown royalblue rosybrown purple orengered olivedrab powderblue peachpuff papayawhip paleturquoise palevioletred palegreen navyblue navajowhite palegodenrod violetred yellowgreen tomato turquoise thistle springgreen steelblue salmon scarlet sienna silver tan thistle turquoise violet snow salmon scarlet sienna silver tan thistle turquoise violet chartreuse firebrick gold khaki mediumslateblue mediumvioletred oldlace maroom goldenrod wheat whitesmoke orange moccasin mistyrose mintcream midnightblue dimgray darksalmon slategray skyblue sienna seashell salmon seagreen sandybrown firebrick gold khaki maroom goldenrod wheat whitesmoke mediumturquoise navy mediumspringgreen mediumseagreen mediumpurpul peru mediumorchid mediumblue mediumaquamarine maroon limegreen lightyellow lightsteelblue magenta lightslateblue lightslategray lightskyblue inen lightseagreen lightsalmon lightpink plum lightgray lightgreen lightgodenrodyellow indianred lavender lightblue lavenderblush lightcoral lightcyan lightgodenrod hotpink greenyellow lemonchiffon lawngreen khaki deepskyblue honeydew golenrod forestgreen gostwhite greenyellow gainsboro firebrick dodgerblue darkturquoise darkslateblue darkslategray darkseagreen darkred darkorchid darkorenge darkslateblue darkviolet floralwhite cyan bisque darkgray cornsilk darkolivegreen darkgoldenrod darkblue darkcyan darkgreen darkhaki ivory darkmagenta darkgray cornfloewrblue cornfloewrblue darkviolet floralwhite 待 补 待 补 darkslategray darkseagreen darkred darkorchid darkorenge darkslateblue 置顶]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F02%2F24%2F%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 这是我的博客Create a new post 1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[格式代码整理]]></title>
     <url>%2F2019%2F02%2F24%2Fpost-title%2F</url>
     <content type="text"><![CDATA[#格式整理 #标题一 ##标题二 ###标题三 ####标题四 #####标题五 这是加粗 这是斜体 这是横线,删除线 ·无序列表·无序列表 1.有序列表12.有序列表2 ‘内嵌代码’ ‘’’￥代码块‘’’ 引用 Create a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
-        <tag>-命令格式 -知识</tag>
+        <tag>-命令格式 -了解</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F02%2F24%2F%E5%AF%86%E7%A0%81%2F</url>
-    <content type="text"><![CDATA[密码不告诉你]]></content>
   </entry>
   <entry>
     <title><![CDATA[Git指令整理]]></title>
