@@ -139,7 +139,7 @@
 <meta property="og:site_name" content="Yellow Thirty">
 <meta property="og:description" content="简介  常用的命令 (简单) 查询、修改、添加 (简单)   [TOC]">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-05T10:01:48.000Z">
+<meta property="og:updated_time" content="2019-03-12T07:28:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql常用命令">
 <meta name="twitter:description" content="简介  常用的命令 (简单) 查询、修改、添加 (简单)   [TOC]">
@@ -206,6 +206,8 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
 
   
   
@@ -366,10 +368,6 @@
 
 
 
-  <i class="fa fa-thumb-tack"></i>
-  <font color="7D26CD">置顶</font>
-  <span class="post-meta-divider">|</span>
-
 
 
 
@@ -430,8 +428,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-05T18:01:48+08:00">
-                2019-03-05
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-12T15:28:30+08:00">
+                2019-03-12
               </time>
             
           </span>
@@ -467,6 +465,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
           
 
           
@@ -526,12 +529,11 @@
 </blockquote>
 <p>[TOC]</p>
 <a id="more"></a>
-<p># </p>
-<h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>模糊搜索<br>    <code>SELECT * FROM user_inf WHERE flatId LIKE &#39;%qaqa%&#39; ;</code><br>字段搜索<br>    <code>SELECT * FROM user_inf WHERE userId  = 103427 ;</code><br>批量搜索<br>    <code>SELECT * FROM user_inf WHERE userId  in (101010 ,101026 ) ;</code><br>指定筛选搜索某字段<br>    <code>SELECT userId,flatId,name,freeCards,cards FROM user_inf WHERE userId = 103427 ;</code> </p>
+<h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>模糊搜索<br>    <code>SELECT * FROM user_inf WHERE flatId LIKE &#39;%qaqa%&#39; ;</code><br>字段搜索<br>    <code>SELECT * FROM user_inf WHERE userId  = 103427 ;</code><br>批量搜索<br>    <code>SELECT * FROM user_inf WHERE userId  in (101010 ,101026 ) ;</code><br>指定筛选搜索某字段<br>    <code>SELECT userId,flatId,name,freeCards,cards FROM user_inf WHERE userId = 103427 ;</code></p>
 <p>分组查询<br>    <code>select clubid,userid from club_user_new group by clubid,userid HAVING count(1) &gt; 1;</code><br>and查询 //同一表内<br>    <code>SELECT * FROM club_user_new WHERE clubid = 924545 and userid = 101131 ;</code></p>
-<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>升序 //对字段flatid进行排序<br>    <code>SELECT * FROM user_inf WHERE userId  = 103427 ORDER BY flatid ASC ;</code><br>降序 //对字段flatid进行降序<br>    <code>SELECT * FROM user_inf WHERE userId  = 103427 ORDER BY flatid DESC ;</code> </p>
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>升序 //对字段flatid进行排序<br>    <code>SELECT * FROM user_inf WHERE userId  = 103427 ORDER BY flatid ASC ;</code><br>降序 //对字段flatid进行降序<br>    <code>SELECT * FROM user_inf WHERE userId  = 103427 ORDER BY flatid DESC ;</code></p>
 <h3 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h3><p>不等于条件判断 //此次符号为不等于，先查询出问题的数据<br>    <code>SELECT * FROM user_inf WHERE playingTableId &lt;&gt; 0  ;</code><br>大于、等于、小于、大/小+等于<br>    <code>SELECT * FROM user_glod_inf WHERE pumpnum AND CREATEdate &gt; &#39;2019-01-06 00:00:00&#39; ;</code><br>    <code>SELECT * FROM user_glod_inf WHERE pumpnum AND CREATEdate = &#39;2019-01-06 00:00:00&#39; ;</code><br>    <code>SELECT * FROM user_glod_inf WHERE pumpnum AND CREATEdate &lt; &#39;2019-01-06 00:00:00&#39; ;</code><br>    <code>SELECT * FROM user_glod_inf WHERE pumpnum AND CREATEdate &lt;= &#39;2019-01-06 00:00:00&#39; ;</code></p>
-<p>SELECT * FROM user_glod_inf WHERE pumpnum AND CREATEdate &gt;= ‘2019-01-06 00:00:00’    </p>
+<p>SELECT * FROM user_glod_inf WHERE pumpnum AND CREATEdate &gt;= ‘2019-01-06 00:00:00’</p>
 <h3 id="字段修改"><a href="#字段修改" class="headerlink" title="字段修改"></a>字段修改</h3><h4 id="单独修改"><a href="#单独修改" class="headerlink" title="单独修改"></a>单独修改</h4><p>更改 //把符号playingTableId字段的数据，修改为0<br>    <code>UPDATE user_inf SET playingTableId = 0 WHERE playingTableId = 224237 ;</code></p>
 <h4 id="全部修改"><a href="#全部修改" class="headerlink" title="全部修改"></a>全部修改</h4><pre><code>//把符号playingTableId字段的一列的数据，修改为0
 `UPDATE user_inf SET playingTableId = 0 ;`
@@ -579,8 +581,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/2019-03-04-wpe简单使用二.html" rel="next" title="wpe简单使用二">
-                <i class="fa fa-chevron-left"></i> wpe简单使用二
+              <a href="/2019/2019-01-05-模板.html" rel="next" title="markdown模板1">
+                <i class="fa fa-chevron-left"></i> markdown模板1
               </a>
             
           </div>
@@ -589,8 +591,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/2019-03-05-adb搭建与使用及连接和获取包名.html" rel="prev" title="adb搭建与使用及连接和获取包名">
-                adb搭建与使用及连接和获取包名 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/2019-01-05-GitGui功能翻译.html" rel="prev" title="GitGui功能界面与翻译">
+                GitGui功能界面与翻译 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -703,7 +705,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -714,7 +716,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -725,7 +727,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -875,6 +877,8 @@ var jiathis_config={
 
 
 
+
+
           
 
         </div>
@@ -972,7 +976,7 @@ var jiathis_config={
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
 
@@ -1528,21 +1532,20 @@ var jiathis_config={
         </script>
       
 
-  <!--   aplayer 音乐播放器 列表    -->
-  <!--   https://yfzhou.coding.me/2018/08/08/Hexo-Next搭建个人博客%EF%BC%88添加网页音乐播放器功能%EF%BC%89/     -->
-      <!--
-      <link rel="stylesheet" href="/dist/APlayer.min.css">
-      <div id="aplayer"></div>
-      <script type="text/javascript" src="/dist/APlayer.min.js"></script>
-      <script type="text/javascript" src="/dist/music.js"></script>
-    -->
+
+
+
+<!--   aplayer 音乐播放器 列表    -->
+<!--   https://yfzhou.coding.me/2018/08/08/Hexo-Next搭建个人博客%EF%BC%88添加网页音乐播放器功能%EF%BC%89/     -->
+<!---->
+    <link rel="stylesheet" href="/dist/APlayer.min.css">
+    <div id="aplayer"></div>
+    <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+    <script type="text/javascript" src="/dist/music.js"></script>
+
 
 
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"mode":{"use":"live2d-widget-model-z16"},"display":{"position":"right","width":50,"height":80,"hOffset":50,"vOffset":-20},"mobile":{"show":false}});</script></body>
-
-
-
-
 </html>
 
   <!-- 页面点击小红心 文件名对应-->
