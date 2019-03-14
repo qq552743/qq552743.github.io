@@ -10,9 +10,9 @@ title: "adb monkey"
 subtitle: "发现一个bug!"
 categories:
 - Android
+- adb
 tags:
 - monkey
-top: 1
 ---
 
 # 简介
@@ -26,16 +26,16 @@ top: 1
 
 # 命令
 //P                                                 指定测试的包
-//V                                                 反馈信息级别            一个 -v增加一个级别 ， 默认级别为 0 
+//V                                                 反馈信息级别            一个 -v增加一个级别 ， 默认级别为 0
 //S                                                 指定产生随机事件种子值，相同的种子值产生相同的事件序列。如： -s 200
 //--throttle：                                每个事件结束后的间隔时间——降低系统的压力（如不指定，系统会尽快的发送事件序列）。如：--throttle 300
 // --ignore-crashes                      忽略崩溃
 // --ignore-timeouts                    忽略超时
 //--monitor-native-crashes         跟踪本地方法的崩溃问题
 
-//--pct-touch                                调整触摸事件的百分比 
-//--pct-motion                             调整移动事件的百分比 
-//--pct-trackball                           调整轨迹事件的百分比 
+//--pct-touch                                调整触摸事件的百分比
+//--pct-motion                             调整移动事件的百分比
+//--pct-trackball                           调整轨迹事件的百分比
 //--pct-nav                                   调整导航事件的百分比 （来自方向输入设备的up/down/left/right）
 
 
@@ -84,7 +84,7 @@ adb shell monkey -p  com.youxigu.qixiongwushuang.uc -s 30 --throttle 30  -v -v 2
 
 3. adb shell
 ![](/20190305152848721/20190305034610020.png)
-出现 
+出现
 >  error:device not found
 
 问题原因：说明安卓设备没有被找到
@@ -151,21 +151,19 @@ finished 结束
 
 # 参考资料
 monkey 介绍：[链接](http://www.testwo.com/blog/6188)
-Monkey 测试环境搭建[链接](http://blog.sina.com.cn/s/blog_15624444e0102wt6f.html) 
+Monkey 测试环境搭建[链接](http://blog.sina.com.cn/s/blog_15624444e0102wt6f.html)
 	1. SDK Manager
 	2. 翻墙工具下载(笔记本-翻墙工具)、离线安装
 	3. Eclipse安装安卓项目(ADT)
-	
+
 MonkeyRunner：
-MonkeyRunner测试环境配置（一） 
+MonkeyRunner测试环境配置（一）
 [链接](http://blog.csdn.net/shy871265996/article/details/9716569)
-MonkeyRunner测试环境配置（二） 
+MonkeyRunner测试环境配置（二）
 [链接](http://blog.csdn.net/shy871265996/article/details/9420819)
-MonkeyRunner测试环境配置（三） 
+MonkeyRunner测试环境配置（三）
 [链接](http://blog.csdn.net/shy871265996/article/details/9716723)
-MonkeyRunner测试环境配置（四） 
+MonkeyRunner测试环境配置（四）
 [链接](http://blog.csdn.net/shy871265996/article/details/9716407)
-MonkeyRunner测试环境配置（五） 
+MonkeyRunner测试环境配置（五）
 [链接](http://blog.csdn.net/shy871265996/article/details/9716285)
-
-

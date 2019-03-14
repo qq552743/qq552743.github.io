@@ -13,10 +13,13 @@ timezone: UTC
 
 # URL 修改访问URL路径
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+## https://yfzhou.coding.me/2018/08/29/Hexo-Next搭建个人博客%EF%BC%88SEO优化%EF%BC%89/
+# url: http://yoursite.com
+url: http://huanglei520.xyz
 root: /
 #永久链接 未生效 需要研究
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: :title.html
 #permalink: :category/:title/
 permalink_defaults:
 
@@ -183,3 +186,13 @@ neat_js:
     # - '**/*.min.js'
     # - '**/jquery.fancybox.pack.js'
     # - '**/index.js'
+
+#百度收录站点
+# https://yfzhou.coding.me/2018/08/29/Hexo-Next搭建个人博客%EF%BC%88SEO优化%EF%BC%89/
+baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: http://huanglei520.xyz # 在百度站长平台中注册的域名
+  token: MMh6GkJUojs3Ak1q # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+deploye:
+- type:baidu_url_submitter

@@ -10,9 +10,9 @@ title: "adblogcat"
 subtitle: "发现一个bug!"
 categories:
 - Android
+- adb
 tags:
 - adb
-top: 1
 ---
 
 # 简介
@@ -115,6 +115,3 @@ adb 分析[链接](http://blog.chinaunix.net/uid-20459533-id-3109996.html)
 Android中对Log日志文件的分析[链接](http://blog.chinaunix.net/uid-20459533-id-3109996.html)
 
 小米-adblog 使用[链接](http://www.miui.com/thread-2210516-1-1.html)
-
-
-
