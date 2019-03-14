@@ -59,18 +59,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[adb monkey]]></title>
-    <url>%2F2019%2F2019-03-05-adb%20monkey.html</url>
-    <content type="text"><![CDATA[简介 monkey抓取方式 (简单) 简单使用与保存数据 (简单) [TOC] 命令//P 指定测试的包//V 反馈信息级别 一个 -v增加一个级别 ， 默认级别为 0//S 指定产生随机事件种子值，相同的种子值产生相同的事件序列。如： -s 200//–throttle： 每个事件结束后的间隔时间——降低系统的压力（如不指定，系统会尽快的发送事件序列）。如：–throttle 300// –ignore-crashes 忽略崩溃// –ignore-timeouts 忽略超时//–monitor-native-crashes 跟踪本地方法的崩溃问题 //–pct-touch 调整触摸事件的百分比//–pct-motion 调整移动事件的百分比//–pct-trackball 调整轨迹事件的百分比//–pct-nav 调整导航事件的百分比 （来自方向输入设备的up/down/left/right） 基本使用格式//eg1:1adb shell monkey -p com.sankuai.meituan -s 500 --ignore-crashes --ignore-timeouts --monitor-native-crashes -v -v 10000 &gt; D:\Environment\SDK\android-sdk-windows\platform-tools\test.txt //eg2:1adb shell monkey -p com.youxigu.qixiongwushuang.uc -s 30 --ignore-crashes --ignore-timeouts --monitor-native-crashes --throttle 30 -v -v 2000 &gt; D:\Environment\SDK\android-sdk-windows\platform-tools\test.txt //eg3:1adb shell monkey -p com.youxigu.qixiongwushuang.uc -s 30 --throttle 30 -v -v 2000 &gt; D:\Environment\SDK\android-sdk-windows\platform-tools\test.txt 命令组合在monkey测试中常用的命令组合有： 简单的输出测试的信息。monkey -p com.yourpackage -v 500 以深度为三级输出测试信息monkey -p com.yourpackage -v -v -v 500 为测试分配一个专用的端口号，不过这个命令只能输出跳转的信息及有错误时输出信息monkey -p com.yourpackage --port 端口号 -v 为随机数的事件序列定一个值，若出现问题下次可以重复同样的系列进行排错monkey -p com.yourpackage -s 数字 -v 500 为每一次执行一次有效的事件后休眠300毫秒monkey -p com.yourpackage -v --throttle 300 500 本机的sdk安装路径 路径为SDK的platform-tools的安装路径输入或者shift+鼠标右键打开cmd F:\Program Files (x86)\Android\android-sdk\platform-tools 2.本机的sdk安装路径 D:\Environment\SDK\android-sdk-windows\platform-tools adb shell出现 error:device not found 问题原因：说明安卓设备没有被找到解决办法： 此时可以使用手机连接电脑，手机的USB模式必须打开，电脑上必须安装有手机的驱动，连上设备之后，我们在输入adb shell命令 5.基本使用 随机操作12Monkey –p com.tencent.mobileqq –v 1000Monkey –p com.sankuai.meituan –v 1000 此命令意思为执行1000次随机用户模拟操作， （com.tencent.mobileqq 为包名） 输入adb空格shell： 出现error:device not found，说明安卓设备没有被找到 此时可以使用手机连接电脑，手机的USB模式必须打开，电脑上必须安装有手机的驱动，连上设备之后，我们在输入adb shell命令 seed 种子count 数all ow package 所有包噢inc lude category 类别launcher 发射器monkey 猴子event 事件percentages 百分比switch 开关action 行动category 类别launch flags 启动标志component 组件finished 结束 导出日志 导出日志：monkey -p com.junte -v 100 &gt; /mnt/sdcard/monkey_test.txt //本机导出 monkey -p com.sankuai.meituan -v 100 &gt; /mnt/sdcard/monkey_test.txtadb shell monkey -p com.sankuai.meituan -v 100 &gt; .\\abcdefg.txt 保存log日志到pc adb shell monkey [option] &gt;d:\monkey.txt 标准流和错误流分开保存 标准流与错误流分开保存，代码如下： Monkey [option] &lt;count&gt; 1&gt;/sdcard/monkey.txt 2&gt;/sdcard/error.txt eg:adb shell monkey -v 100 1&gt;d:\monkey.log 2&gt;d:\error.log 执行以上命令，Monkey的运行日志和异常日志将被分开保存。此时Monkey的运行日志将被保存在monkey.txt文件中，而异常日志将被保存在D盘下的error.txt中 参考资料monkey 介绍：链接Monkey 测试环境搭建链接 1. SDK Manager 2. 翻墙工具下载(笔记本-翻墙工具)、离线安装 3. Eclipse安装安卓项目(ADT) MonkeyRunner：MonkeyRunner测试环境配置（一）链接MonkeyRunner测试环境配置（二）链接MonkeyRunner测试环境配置（三）链接MonkeyRunner测试环境配置（四）链接MonkeyRunner测试环境配置（五）链接]]></content>
-      <categories>
-        <category>Android</category>
-        <category>adb</category>
-      </categories>
-      <tags>
-        <tag>monkey</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[adblogcat]]></title>
     <url>%2F2019%2F2019-03-05-adb%20logcat.html</url>
     <content type="text"><![CDATA[简介 日志抓取方式 (简单) 日志级别与简单使用 (简单) 参考资料 [TOC] DDMS 功能翻译//过滤logcat消息来源的标记,pid或最小日志级别。 Filter logcat messages by the source’s tag, pid or minimum log level. //空字段将匹配所有消息。 Empty fields will match all messages. 123456filter name //过滤 by log tag //日志标记 by log message //日志消息 by pid by application name //应用程序名称 by log level //日志级别 日志级别V -详细(最低优先级) D -调试 I -信息 W -警告 E -错误 F -致命的 S -沉默 简单使用与导出（略）1. 显示现在连接的手机设备：输入 **adb devices** + 回车 2. 抓log：输入 adb logcat + 回车 3. 停止抓log：使用ctrl + c 4. 将log导出：adb logcat &gt; d：1.txt（将log导出到d：/1.txt文件中） 5. adb shell 命令行下, 可以使用 exit 、ctrl + d 退出 日志获取方式并存储到本地命令与格式:logcat -v time -s *:E &gt; /mmt/sdcard/1.logeg: 1234567adb logcat -v time -s appname:E&gt;d:/1.log）//输出到当前目录adb logcat -v time 1 &gt;.\\logcat.log//输出到指定目录adb logcat -v time 1 &gt;d:/logcats.log 日志获取方式2adb logcat -v time thread &gt;d:/logcats.log 根据应用PID，筛选日志3 //获取应用的PID 123adb shell dumpsys meminfo org.cocos2dx.FengHuangNiuNiu（ 46469 kB: org.cocos2dx.FengHuangNiuNiu (pid 8481 / activities)） adb logcat JPush:D * s | grep 8481 参考资料:如何抓取log链接 adb抓取链接 adb 分析链接 Android中对Log日志文件的分析链接 小米-adblog 使用链接]]></content>
@@ -92,6 +80,18 @@
       </categories>
       <tags>
         <tag>adb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[adb monkey]]></title>
+    <url>%2F2019%2F2019-03-05-adb%20monkey.html</url>
+    <content type="text"><![CDATA[简介 monkey抓取方式 (简单) 简单使用与保存数据 (简单) [TOC] 命令//P 指定测试的包//V 反馈信息级别 一个 -v增加一个级别 ， 默认级别为 0//S 指定产生随机事件种子值，相同的种子值产生相同的事件序列。如： -s 200//–throttle： 每个事件结束后的间隔时间——降低系统的压力（如不指定，系统会尽快的发送事件序列）。如：–throttle 300// –ignore-crashes 忽略崩溃// –ignore-timeouts 忽略超时//–monitor-native-crashes 跟踪本地方法的崩溃问题 //–pct-touch 调整触摸事件的百分比//–pct-motion 调整移动事件的百分比//–pct-trackball 调整轨迹事件的百分比//–pct-nav 调整导航事件的百分比 （来自方向输入设备的up/down/left/right） 基本使用格式//eg1:1adb shell monkey -p com.sankuai.meituan -s 500 --ignore-crashes --ignore-timeouts --monitor-native-crashes -v -v 10000 &gt; D:\Environment\SDK\android-sdk-windows\platform-tools\test.txt //eg2:1adb shell monkey -p com.youxigu.qixiongwushuang.uc -s 30 --ignore-crashes --ignore-timeouts --monitor-native-crashes --throttle 30 -v -v 2000 &gt; D:\Environment\SDK\android-sdk-windows\platform-tools\test.txt //eg3:1adb shell monkey -p com.youxigu.qixiongwushuang.uc -s 30 --throttle 30 -v -v 2000 &gt; D:\Environment\SDK\android-sdk-windows\platform-tools\test.txt 命令组合在monkey测试中常用的命令组合有： 简单的输出测试的信息。monkey -p com.yourpackage -v 500 以深度为三级输出测试信息monkey -p com.yourpackage -v -v -v 500 为测试分配一个专用的端口号，不过这个命令只能输出跳转的信息及有错误时输出信息monkey -p com.yourpackage --port 端口号 -v 为随机数的事件序列定一个值，若出现问题下次可以重复同样的系列进行排错monkey -p com.yourpackage -s 数字 -v 500 为每一次执行一次有效的事件后休眠300毫秒monkey -p com.yourpackage -v --throttle 300 500 本机的sdk安装路径 路径为SDK的platform-tools的安装路径输入或者shift+鼠标右键打开cmd F:\Program Files (x86)\Android\android-sdk\platform-tools 2.本机的sdk安装路径 D:\Environment\SDK\android-sdk-windows\platform-tools adb shell出现 error:device not found 问题原因：说明安卓设备没有被找到解决办法： 此时可以使用手机连接电脑，手机的USB模式必须打开，电脑上必须安装有手机的驱动，连上设备之后，我们在输入adb shell命令 5.基本使用 随机操作12Monkey –p com.tencent.mobileqq –v 1000Monkey –p com.sankuai.meituan –v 1000 此命令意思为执行1000次随机用户模拟操作， （com.tencent.mobileqq 为包名） 输入adb空格shell： 出现error:device not found，说明安卓设备没有被找到 此时可以使用手机连接电脑，手机的USB模式必须打开，电脑上必须安装有手机的驱动，连上设备之后，我们在输入adb shell命令 seed 种子count 数all ow package 所有包噢inc lude category 类别launcher 发射器monkey 猴子event 事件percentages 百分比switch 开关action 行动category 类别launch flags 启动标志component 组件finished 结束 导出日志 导出日志：monkey -p com.junte -v 100 &gt; /mnt/sdcard/monkey_test.txt //本机导出 monkey -p com.sankuai.meituan -v 100 &gt; /mnt/sdcard/monkey_test.txtadb shell monkey -p com.sankuai.meituan -v 100 &gt; .\\abcdefg.txt 保存log日志到pc adb shell monkey [option] &gt;d:\monkey.txt 标准流和错误流分开保存 标准流与错误流分开保存，代码如下： Monkey [option] &lt;count&gt; 1&gt;/sdcard/monkey.txt 2&gt;/sdcard/error.txt eg:adb shell monkey -v 100 1&gt;d:\monkey.log 2&gt;d:\error.log 执行以上命令，Monkey的运行日志和异常日志将被分开保存。此时Monkey的运行日志将被保存在monkey.txt文件中，而异常日志将被保存在D盘下的error.txt中 参考资料monkey 介绍：链接Monkey 测试环境搭建链接 1. SDK Manager 2. 翻墙工具下载(笔记本-翻墙工具)、离线安装 3. Eclipse安装安卓项目(ADT) MonkeyRunner：MonkeyRunner测试环境配置（一）链接MonkeyRunner测试环境配置（二）链接MonkeyRunner测试环境配置（三）链接MonkeyRunner测试环境配置（四）链接MonkeyRunner测试环境配置（五）链接]]></content>
+      <categories>
+        <category>Android</category>
+        <category>adb</category>
+      </categories>
+      <tags>
+        <tag>monkey</tag>
       </tags>
   </entry>
   <entry>
@@ -118,18 +118,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Git 指令整理]]></title>
-    <url>%2F2019%2F2019-02-28-Hexo%20%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B.html</url>
-    <content type="text"><![CDATA[简介：1、Hexo 基本教程2、常用命令 [TOC] 基本操作访问模式：本地调试：http://localhost:4000 域：http://huanglei520.xyz 调试与坏境安装与调试npm install hexo-cli -g//安装hexo 此外npm install -g hexo-cli hexo init blog//初始化安装博客文件夹 cd blog || cd ..\//进入命令 //返回上一文件夹 npm installhexo server npm list hexo-deployer-gitgit config –global credential.helper wincredssh-keygen -t rsa –C “rockinghl@163.com”//密匙，需要授权的话，可再打该命令 Git上传/推送git init//初始化成可管理的本地仓库 ，跟踪管理版本 git add xxx//添加文件到暂存区 （如svn的添加） git add .​ //添加所有未修改的文件（有空格 + 点号） git commit -m “注释信息”//可中文 空格 git status//查看状态 初次修改前需要pull ，之后每次提交需要查看 释义： 在主支干上，有工作记录未提交 git remote add origin https://github.com/qq552743/qq552743.github.io//连接远程仓库 git push -u origin master//把本地内容提交到远程仓库的主干上 git push origin master 加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。 eg: git diff readme.txt​ //查看文件 如上可以看到，readme.txt文件内容从一行11111111改成 二行 添加了一行22222222内容。 cat xxxxx.xxx//查看文件内容 git log//查看历史信息 rm//删除命令 需要删下层得进入文件夹下 git checkout – xxx//恢复命令 下载/克隆/拉取git clone https://github.com/qq552743/qq552743.github.io//拉取 这是基于有环境下，如果无环境，需要走安装步骤 eg:https://blog.csdn.net/baozhiqiangjava/article/details/81106046?utm_source=blogxgwz3 分支git branch xx//查看当前连接分支 git branch -a//查看所有分支 git branch hexo//创建分支 git checkout -b hexo//创建+切换 到该hexo分支 git checkout master \ hexo//切换到主分支 \ 分支 git merge xxx//合并某分支内容到当前*分支上 git branch -d xxx//删除分支 其他注意项git pull –rebase origin master在你准备上传你的项目之前，最好更新一下项目，确保没有和远程仓库的代码有冲突]]></content>
-      <categories>
-        <category>Hexo</category>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo新电脑上怎么更新博客]]></title>
     <url>%2F2019%2F2019-02-28-Hexo%20%E6%96%B0%E7%94%B5%E8%84%91%E4%B8%8A%E6%80%8E%E4%B9%88%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2.html</url>
     <content type="text"><![CDATA[[TOC] 大佬整理的链接： https://blog.csdn.net/a3212/article/details/80095758参考资料：https://www.zhihu.com/question/21193762 http://fangzh.top/2018/2018090715/ （详细） 一、引言其实，Hexo生成的文件里面是有一个.gitignore的，所以它的本意应该也是想我们把这些文件放到GitHub上存放的。但是考虑到如果每个GitHub Pages都需要额外的一个仓库存放这些文件，就显得特别冗余了。这个时候就可以用分支的思路！一个分支用来存放Hexo生成的网站原始的文件，另一个分支用来存放生成的静态网页。 二、搭建的流程 创建仓库，qq552743.github.io; 创建两个分支：master 与 hexo； 设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）； Settings–&gt;branches–&gt;default branch; 使用git clone https://github.com/qq552743/qq552743.github.io.git 拷贝仓库； _config.yml，theme/，source/，scaffolds/，package.json，.gitignore ,源拷贝进来.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除，别拷贝进来 在本地qq552743.github.io 文件夹下通过Git bash依次执行npm install hexo、-hexo init-、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）; 执行完如果不慎删除。git文件，（最好不要初始化），需要再重新建个git init, git checkout -b hexo分支就好了（window下） 修改_config.yml中的deploy参数，分支应为master； 依次执行git add .、git commit -m “source first”、git push origin hexo提交网站相关的文件； 执行hexo g -d生成网站并部署到GitHub上。这样一来，在GitHub上的仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y！ + nice！ 其他：部署前需要安装的插件1、为了建立RSS订阅，需要安装npm install hexo-generator-feed –save2、为了建立站点地图，需要安装npm install hexo-generator-sitemap –save 三、日常的改动流程在本地对博客进行修改、添加新博文、修改样式等等可以参照以下流程： 依次执行git add .、git commit -m “…”、git push origin hexo指令将改动推送到GitHub（此时当前分支应为hexo）； 然后才执行hexo g -d发布网站到master分支上。虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催…的情况，调转顺序就有问题了）。 四、拉取备份本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤： 使用git clone https://github.com/qq552743/qq552743.github.io.git 拷贝仓库（默认分支为hexo）； 在本地新拷贝的http://catalinaLi.github.io 文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。 五、其他存储方式1.码云上存储源码 思路与github一样2.网盘、U盘拷贝四大金刚，依次执行操作后再进行写博客 六、其他问题（error）1、缺少git repository 解决办法：ssh key 相关2、hexo init会把 .git 干掉，再git init的话，就不能push了。。这个怎么弄呀？ 解决办法1：先把.git文件夹复制到其它目录，git init 完后，再把.git文件夹拷回来 解决办法2：git rm -rf –cached themes/主题名,除原本仓库的git记录,之后在作为普通文件夹添加(commit)3、next主题到仓库里，打不开 解决办法：由于文件里面有。git文件导致]]></content>
@@ -153,17 +141,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[地址收藏与整理]]></title>
-    <url>%2F2019%2F2019-02-28-%E5%9C%B0%E5%9D%80%E6%94%B6%E8%97%8F%E4%B8%8E%E6%95%B4%E7%90%86.html</url>
-    <content type="text"><![CDATA[地址收藏 GitHub： 链接：xxx 码云： 链接：xxx]]></content>
-      <categories>
-        <category>网址</category>
-      </categories>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[模板基本格式整理]]></title>
     <url>%2F2019%2F2019-02-28-%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F%E6%95%B4%E7%90%86.html</url>
     <content type="text"><![CDATA[#格式整理链接： https://www.mdeditor.com/ #标题一 ##标题二 ###标题三 ####标题四 #####标题五 这是加粗 这是斜体 这是横线,删除线 ·无序列表·无序列表 1.有序列表12.有序列表2 ‘内嵌代码’ ‘’’￥代码块‘’’ 引用 Create a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
@@ -172,6 +149,29 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git 指令整理]]></title>
+    <url>%2F2019%2F2019-02-28-Hexo%20%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B.html</url>
+    <content type="text"><![CDATA[简介：1、Hexo 基本教程2、常用命令 [TOC] 基本操作访问模式：本地调试：http://localhost:4000 域：http://huanglei520.xyz 调试与坏境安装与调试npm install hexo-cli -g//安装hexo 此外npm install -g hexo-cli hexo init blog//初始化安装博客文件夹 cd blog || cd ..\//进入命令 //返回上一文件夹 npm installhexo server npm list hexo-deployer-gitgit config –global credential.helper wincredssh-keygen -t rsa –C “rockinghl@163.com”//密匙，需要授权的话，可再打该命令 Git上传/推送git init//初始化成可管理的本地仓库 ，跟踪管理版本 git add xxx//添加文件到暂存区 （如svn的添加） git add .​ //添加所有未修改的文件（有空格 + 点号） git commit -m “注释信息”//可中文 空格 git status//查看状态 初次修改前需要pull ，之后每次提交需要查看 释义： 在主支干上，有工作记录未提交 git remote add origin https://github.com/qq552743/qq552743.github.io//连接远程仓库 git push -u origin master//把本地内容提交到远程仓库的主干上 git push origin master 加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。 eg: git diff readme.txt​ //查看文件 如上可以看到，readme.txt文件内容从一行11111111改成 二行 添加了一行22222222内容。 cat xxxxx.xxx//查看文件内容 git log//查看历史信息 rm//删除命令 需要删下层得进入文件夹下 git checkout – xxx//恢复命令 下载/克隆/拉取git clone https://github.com/qq552743/qq552743.github.io//拉取 这是基于有环境下，如果无环境，需要走安装步骤 eg:https://blog.csdn.net/baozhiqiangjava/article/details/81106046?utm_source=blogxgwz3 分支git branch xx//查看当前连接分支 git branch -a//查看所有分支 git branch hexo//创建分支 git checkout -b hexo//创建+切换 到该hexo分支 git checkout master \ hexo//切换到主分支 \ 分支 git merge xxx//合并某分支内容到当前*分支上 git branch -d xxx//删除分支 其他注意项git pull –rebase origin master在你准备上传你的项目之前，最好更新一下项目，确保没有和远程仓库的代码有冲突]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[地址收藏与整理]]></title>
+    <url>%2F2019%2F2019-02-28-%E5%9C%B0%E5%9D%80%E6%94%B6%E8%97%8F%E4%B8%8E%E6%95%B4%E7%90%86.html</url>
+    <content type="text"><![CDATA[地址收藏 GitHub： 链接：xxx 码云： 链接：xxx]]></content>
+      <categories>
+        <category>网址</category>
+      </categories>
+      <tags>
+        <tag>其他</tag>
       </tags>
   </entry>
   <entry>
