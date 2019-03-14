@@ -1918,7 +1918,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #74abff;
+  background: #ffe7e7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2773,6 +2773,27 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+body {
+  background: url("/images/hlyh/jingtaiheise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.sidebar {
+  background: url("/images/hlyh/xingkongliuxing.gif") no-repeat !important;
+  background-size: cover !important;
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+}
+* {
+  cursor: url("/images/hlyh/cursor.ico"), auto !important;
+}
+:active {
+  cursor: url("/images/hlyh/cursor.ico"), auto !important;
 }
 @font-face {
   font-family: HYXingKaiJ;

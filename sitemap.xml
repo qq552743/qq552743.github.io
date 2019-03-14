@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://huanglei520.xyz/videos/index.html</loc>
+    
+    <lastmod>2019-03-14T05:52:12.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://huanglei520.xyz/photos/index.html</loc>
+    
+    <lastmod>2019-03-14T04:58:16.548Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://huanglei520.xyz/photos/videos.html</loc>
+    
+    <lastmod>2019-03-14T04:14:39.228Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://huanglei520.xyz/about/index.html</loc>
     
-    <lastmod>2019-03-12T17:38:33.169Z</lastmod>
+    <lastmod>2019-03-12T17:38:34.000Z</lastmod>
     
   </url>
   
@@ -117,13 +138,6 @@
     <loc>http://huanglei520.xyz/tags/index.html</loc>
     
     <lastmod>2019-03-03T16:05:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://huanglei520.xyz/photo/index.html</loc>
-    
-    <lastmod>2019-03-03T11:21:44.000Z</lastmod>
     
   </url>
   
