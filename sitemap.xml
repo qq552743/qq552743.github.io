@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://huanglei520.xyz/about/index.html</loc>
+    
+    <lastmod>2019-03-16T09:05:05.640Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://huanglei520.xyz/videos/index.html</loc>
     
     <lastmod>2019-03-14T05:52:12.979Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://huanglei520.xyz/photos/videos.html</loc>
     
     <lastmod>2019-03-14T04:14:39.228Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://huanglei520.xyz/about/index.html</loc>
-    
-    <lastmod>2019-03-12T17:38:34.000Z</lastmod>
     
   </url>
   
