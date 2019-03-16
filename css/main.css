@@ -1918,7 +1918,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #08ff98;
+  background: #a4ff01;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2775,7 +2775,6 @@ embed {
   display: inline-block;
 }
 body {
-  background: url("/images/hlyh/sixiantiao.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2790,10 +2789,10 @@ body {
   bottom: 0 !important;
 }
 * {
-  cursor: url("/images/hlyh/LinkSelect.ani"), auto !important;
+  cursor: url("/images/hlyh/mouse.cur"), auto !important;
 }
 :active {
-  cursor: url("/images/hlyh/LinkSelect.ani"), auto !important;
+  cursor: url("/images/hlyh/mouse.cur"), auto !important;
 }
 @font-face {
   font-family: HYXingKaiJ;
