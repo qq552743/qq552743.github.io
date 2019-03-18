@@ -4,6 +4,10 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
 var imagemin = require('gulp-imagemin');
+
+
+
+
 // 压缩css文件
 gulp.task('minify-css', function() {
   return gulp.src('./public/**/*.css')
@@ -39,7 +43,12 @@ gulp.task('minify-images', function() {
         }))
         .pipe(gulp.dest('./public/uploads'));
 });
-// 默认任务
-gulp.task('default', [
-  'minify-html','minify-css','minify-js','minify-images'
-]);
+// 默认任务  适用 3.9或者以下版本
+// gulp.task('default', [
+//   'minify-html','minify-css','minify-js','minify-images'
+// ]);
+
+// gulp 4.0 或以上 适用的方式
+gulp.task('build', gulp.parallel('minify-html', 'minify-css', 'minify-js'
+ //build the website
+));

@@ -162,7 +162,7 @@ plugins: hexo-generate-feed
 # hexo-neat 博文压缩   弃用
 # GitHub https://github.com/rozbo/hexo-neat
 # 教程原文：https://blog.csdn.net/lewky_liu/article/details/82432003
-neat_enable: false
+neat_enable: true
 # 压缩html
 neat_html:
   enable: true
@@ -171,8 +171,9 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '*.min.css' #官方
-    # - '**/*.min.css'   #由于有中文，各种报错
+    - '**/*.min.css'   #由于有中文，各种报错
+    # - '*.min.css' #官方
+
 # 压缩js
 neat_js:
   enable: true
@@ -180,12 +181,12 @@ neat_js:
   output:
   compress:
   exclude:
-    - '*.min.js'  #官方
+    # - '*.min.js'  #官方
 
     # 下面3个，由于代码中带有中文，各种报错
-    # - '**/*.min.js'
-    # - '**/jquery.fancybox.pack.js'
-    # - '**/index.js'
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
 
 #百度收录站点
 # https://yfzhou.coding.me/2018/08/29/Hexo-Next搭建个人博客%EF%BC%88SEO优化%EF%BC%89/
