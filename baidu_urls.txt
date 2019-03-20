@@ -1,16 +1,16 @@
-http://huanglei520.xyz/2019/2019-01-05-时钟特效1.html
-http://huanglei520.xyz/2019/2019-01-05-GitGui功能翻译.html
-http://huanglei520.xyz/2019/2019-01-05-模板.html
-http://huanglei520.xyz/2019/2019-03-05-adb搭建与使用及连接和获取包名.html
-http://huanglei520.xyz/2019/2019-03-05-mysql.html
-http://huanglei520.xyz/2019/2019-03-05-adb monkey.html
-http://huanglei520.xyz/2019/2019-03-05-adb logcat.html
-http://huanglei520.xyz/2019/2019-03-05-Fidder抓取资源.html
-http://huanglei520.xyz/2019/2019-03-05-Excel.html
-http://huanglei520.xyz/2019/2019-03-04-wpe简单使用二.html
-http://huanglei520.xyz/2019/2019-02-28-基本格式整理.html
-http://huanglei520.xyz/2019/2019-02-28-地址收藏与整理.html
-http://huanglei520.xyz/2019/2019-02-28-git指令.html
-http://huanglei520.xyz/2019/2019-02-28-Hexo 新电脑上怎么更新博客.html
-http://huanglei520.xyz/2019/2019-02-28-Hexo 基本教程.html
-http://huanglei520.xyz/2019/2019-02-28-常用颜色值速查.html
+http://huanglei520.xyz/posts/d8fedcb1.html
+http://huanglei520.xyz/posts/22701703.html
+http://huanglei520.xyz/posts/863fccce.html
+http://huanglei520.xyz/posts/6225d8a1.html
+http://huanglei520.xyz/posts/6fe4d926.html
+http://huanglei520.xyz/posts/5773a6e9.html
+http://huanglei520.xyz/posts/80734759.html
+http://huanglei520.xyz/posts/4ab1a8de.html
+http://huanglei520.xyz/posts/46230879.html
+http://huanglei520.xyz/posts/9ead9b3c.html
+http://huanglei520.xyz/posts/6839289.html
+http://huanglei520.xyz/posts/58397da6.html
+http://huanglei520.xyz/posts/70f02118.html
+http://huanglei520.xyz/posts/1bb7c4a.html
+http://huanglei520.xyz/posts/3de189b.html
+http://huanglei520.xyz/posts/b6c9e6c8.html
