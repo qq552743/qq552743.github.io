@@ -24,19 +24,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Excel与测试用例]]></title>
-    <url>%2Fposts%2F6225d8a1.html</url>
-    <content type="text"><![CDATA[简介excel常用于编写测试用例的部分函数pict测试用例生成工具参考资料[TOC]单元格ID链接=IF(F6=&quot;&quot;,&quot;&quot;,ROW()-3)如：=IF(G2=””,””,ROW(E2)-1)二、单元格格式（单元格背景色）链接数据,单元格有效性条件格式设置颜色统计出现次数链接=countif（range，criteria）其中range 表示要计算非空单元格数目的区域其中criteria 表示以数字、表达式或文本形式定义的条件eg:=COUNTIF(A2:A14,”赵四”)合并单元格快速计数链接备注：合并单元格，可以用格式刷函数：=counta(B2:B14)-sum(c3:c14)合并单元格快速汇总一列数据，转换成一行数据选择好复制的内容选中单元格，右键—选择性粘贴弹出二次框中，勾选上转置计算单元格中，出现的字符个数函数:=COUNTIF(A1：A20,&quot;高级工程师“）pict测试用例生成工具工具使用参考资料：ExcelHome - 全球领先的Excel门户链接如何破解EXCEL中的保护密码1链接如何破解EXCEL中的保护密码2链接Excel录入时开启单元格自动下拉菜单链接excel快速选定指定单元格区域链接excel中如何隐藏列和取消隐藏列链接]]></content>
-      <categories>
-        <category>测试用例</category>
-        <category>Excel</category>
-      </categories>
-      <tags>
-        <tag>excel</tag>
-        <tag>pict</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Fidder抓取资源.]]></title>
     <url>%2Fposts%2F6fe4d926.html</url>
     <content type="text"><![CDATA[简介日志抓取方式 (简单)日志级别与简单使用 (简单)参考资料[TOC]图标及所对应的释义实例，抓取APP更新音效资源(mp3),并批量下载一、先抓包-下载地址：https://www.telerik.com/download/fiddler/fiddler4二、抓包-手机代理设置https://blog.csdn.net/shimengran107/article/details/78644862https://www.cnblogs.com/meitian/p/4997310.html三、证书-下载地址：如果出现这个报错，需要安装证书http://www.telerik.com/docs/default-source/fiddler/addons/fiddlercertmaker.exe?sfvrsn=2四、环境配置好后， 抓取更新时的域名(野马)和文件（野马的mp3）从开头开始抓起，每个点开看下仔细求证五、多种下载文件方式双击链接复制链接六、找到需要的资源文件七、对刚刚获取到的文件进行处理，第一步http://note.youdao.com/noteshare?id=9f3a3b2cf06b048e08a665ada4335d31&amp;sub=73740C3D63184BF99DD22AA0AFCE92DF八、对刚刚获取到的文件进行处理，第二步http://note.youdao.com/noteshare?id=c776c17098cf1e53a895350dea5e600c&amp;sub=932202FB20D94B4FA4E2B93E38E647F6思考：抓包测试点，抓金币数值，然后修改数值进行欺骗操作 （WPE类似的工具）抓包测试点，抓牌型，修改牌（难难难~~~）参考资料:Fiddler+海马模拟器抓包教程链接失效利用Fiddler对Android模拟器网络请求进行抓包链接Fiddler使用教程1链接Fiddler使用教程2链接帮助介绍链接]]></content>
@@ -95,6 +82,32 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Excel与测试用例]]></title>
+    <url>%2Fposts%2F6225d8a1.html</url>
+    <content type="text"><![CDATA[简介excel常用于编写测试用例的部分函数pict测试用例生成工具参考资料[TOC]单元格ID链接=IF(F6=&quot;&quot;,&quot;&quot;,ROW()-3)如：=IF(G2=””,””,ROW(E2)-1)二、单元格格式（单元格背景色）链接数据,单元格有效性条件格式设置颜色统计出现次数链接=countif（range，criteria）其中range 表示要计算非空单元格数目的区域其中criteria 表示以数字、表达式或文本形式定义的条件eg:=COUNTIF(A2:A14,”赵四”)合并单元格快速计数链接备注：合并单元格，可以用格式刷函数：=counta(B2:B14)-sum(c3:c14)合并单元格快速汇总一列数据，转换成一行数据选择好复制的内容选中单元格，右键—选择性粘贴弹出二次框中，勾选上转置计算单元格中，出现的字符个数函数:=COUNTIF(A1：A20,&quot;高级工程师“）pict测试用例生成工具工具使用参考资料：ExcelHome - 全球领先的Excel门户链接如何破解EXCEL中的保护密码1链接如何破解EXCEL中的保护密码2链接Excel录入时开启单元格自动下拉菜单链接excel快速选定指定单元格区域链接excel中如何隐藏列和取消隐藏列链接]]></content>
+      <categories>
+        <category>测试用例</category>
+        <category>Excel</category>
+      </categories>
+      <tags>
+        <tag>excel</tag>
+        <tag>pict</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Excel与测试用例]]></title>
+    <url>%2Fposts%2F6225d8a1.html</url>
+    <content type="text"><![CDATA[简介excel常用于编写测试用例的部分函数pict测试用例生成工具参考资料[TOC]单元格ID链接=IF(F6=&quot;&quot;,&quot;&quot;,ROW()-3)如：=IF(G2=””,””,ROW(E2)-1)二、单元格格式（单元格背景色）链接数据,单元格有效性条件格式设置颜色统计出现次数链接=countif（range，criteria）其中range 表示要计算非空单元格数目的区域其中criteria 表示以数字、表达式或文本形式定义的条件eg:=COUNTIF(A2:A14,”赵四”)合并单元格快速计数链接备注：合并单元格，可以用格式刷函数：=counta(B2:B14)-sum(c3:c14)合并单元格快速汇总一列数据，转换成一行数据选择好复制的内容选中单元格，右键—选择性粘贴弹出二次框中，勾选上转置计算单元格中，出现的字符个数函数:=COUNTIF(A1：A20,&quot;高级工程师“）pict测试用例生成工具工具使用参考资料：ExcelHome - 全球领先的Excel门户链接如何破解EXCEL中的保护密码1链接如何破解EXCEL中的保护密码2链接Excel录入时开启单元格自动下拉菜单链接excel快速选定指定单元格区域链接excel中如何隐藏列和取消隐藏列链接]]></content>
+      <categories>
+        <category>测试用例</category>
+        <category>Excel</category>
+      </categories>
+      <tags>
+        <tag>excel</tag>
+        <tag>pict</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[markdown模板1]]></title>
     <url>%2Fposts%2F863fccce.html</url>
     <content type="text"><![CDATA[简介日志抓取方式 (简单)日志级别与简单使用 (简单)参考资料[TOC]#参考资料:如何抓取log链接adb抓取链接adb 分析链接Android中对Log日志文件的分析链接小米-adblog 使用链接]]></content>
@@ -118,9 +131,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo新电脑上怎么更新博客]]></title>
-    <url>%2Fposts%2F3de189b.html</url>
-    <content type="text"><![CDATA[[TOC]大佬整理的链接：https://blog.csdn.net/a3212/article/details/80095758参考资料：https://www.zhihu.com/question/21193762http://fangzh.top/2018/2018090715/ （详细）一、引言其实，Hexo生成的文件里面是有一个.gitignore的，所以它的本意应该也是想我们把这些文件放到GitHub上存放的。但是考虑到如果每个GitHub Pages都需要额外的一个仓库存放这些文件，就显得特别冗余了。这个时候就可以用分支的思路！一个分支用来存放Hexo生成的网站原始的文件，另一个分支用来存放生成的静态网页。二、搭建的流程创建仓库，qq552743.github.io;创建两个分支：master 与 hexo；设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；Settings–&gt;branches–&gt;default branch;使用git clone https://github.com/qq552743/qq552743.github.io.git 拷贝仓库；_config.yml，theme/，source/，scaffolds/，package.json，.gitignore ,源拷贝进来.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除，别拷贝进来在本地qq552743.github.io 文件夹下通过Git bash依次执行npm install hexo、-hexo init-、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）;执行完如果不慎删除。git文件，（最好不要初始化），需要再重新建个git init, git checkout -b hexo分支就好了（window下）修改_config.yml中的deploy参数，分支应为master；依次执行git add .、git commit -m “source first”、git push origin hexo提交网站相关的文件；执行hexo g -d生成网站并部署到GitHub上。这样一来，在GitHub上的仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y！ + nice！其他：部署前需要安装的插件1、为了建立RSS订阅，需要安装npm install hexo-generator-feed –save2、为了建立站点地图，需要安装npm install hexo-generator-sitemap –save三、日常的改动流程在本地对博客进行修改、添加新博文、修改样式等等可以参照以下流程：依次执行git add .、git commit -m “…”、git push origin hexo指令将改动推送到GitHub（此时当前分支应为hexo）；然后才执行hexo g -d发布网站到master分支上。虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催…的情况，调转顺序就有问题了）。四、拉取备份本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤：使用git clone https://github.com/qq552743/qq552743.github.io.git 拷贝仓库（默认分支为hexo）；在本地新拷贝的http://catalinaLi.github.io 文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。五、其他存储方式1.码云上存储源码 思路与github一样2.网盘、U盘拷贝四大金刚，依次执行操作后再进行写博客六、其他问题（error）1、缺少git repository解决办法：ssh key 相关2、hexo init会把 .git 干掉，再git init的话，就不能push了。。这个怎么弄呀？解决办法1：先把.git文件夹复制到其它目录，git init 完后，再把.git文件夹拷回来解决办法2：git rm -rf –cached themes/主题名,除原本仓库的git记录,之后在作为普通文件夹添加(commit)3、next主题到仓库里，打不开解决办法：由于文件里面有。git文件导致]]></content>
+    <title><![CDATA[Git 指令整理]]></title>
+    <url>%2Fposts%2F58397da6.html</url>
+    <content type="text"><![CDATA[简介：1、Hexo 基本教程2、常用命令[TOC]基本操作访问模式：本地调试：http://localhost:4000 域：http://huanglei520.xyz调试与坏境安装与调试npm install hexo-cli -g//安装hexo 此外npm install -g hexo-clihexo init blog//初始化安装博客文件夹cd blog || cd ..\//进入命令 //返回上一文件夹npm installhexo servernpm list hexo-deployer-gitgit config –global credential.helper wincredssh-keygen -t rsa –C “rockinghl@163.com”//密匙，需要授权的话，可再打该命令Git上传/推送git init//初始化成可管理的本地仓库 ，跟踪管理版本git add xxx//添加文件到暂存区 （如svn的添加）git add .​ //添加所有未修改的文件（有空格 + 点号）git commit -m “注释信息”//可中文 空格git status//查看状态初次修改前需要pull ，之后每次提交需要查看释义：在主支干上，有工作记录未提交git remote add origin https://github.com/qq552743/qq552743.github.io//连接远程仓库git push -u origin master//把本地内容提交到远程仓库的主干上git push origin master加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。eg:git diff readme.txt​ //查看文件如上可以看到，readme.txt文件内容从一行11111111改成 二行 添加了一行22222222内容。cat xxxxx.xxx//查看文件内容git log//查看历史信息rm//删除命令 需要删下层得进入文件夹下git checkout – xxx//恢复命令下载/克隆/拉取git clone https://github.com/qq552743/qq552743.github.io//拉取这是基于有环境下，如果无环境，需要走安装步骤eg:https://blog.csdn.net/baozhiqiangjava/article/details/81106046?utm_source=blogxgwz3分支git branch xx//查看当前连接分支git branch -a//查看所有分支git branch hexo//创建分支git checkout -b hexo//创建+切换 到该hexo分支git checkout master \ hexo//切换到主分支 \ 分支git merge xxx//合并某分支内容到当前*分支上git branch -d xxx//删除分支其他注意项git pull –rebase origin master在你准备上传你的项目之前，最好更新一下项目，确保没有和远程仓库的代码有冲突]]></content>
       <categories>
         <category>Hexo</category>
         <category>Git</category>
@@ -130,9 +143,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Git 指令整理]]></title>
-    <url>%2Fposts%2F58397da6.html</url>
-    <content type="text"><![CDATA[简介：1、Hexo 基本教程2、常用命令[TOC]基本操作访问模式：本地调试：http://localhost:4000 域：http://huanglei520.xyz调试与坏境安装与调试npm install hexo-cli -g//安装hexo 此外npm install -g hexo-clihexo init blog//初始化安装博客文件夹cd blog || cd ..\//进入命令 //返回上一文件夹npm installhexo servernpm list hexo-deployer-gitgit config –global credential.helper wincredssh-keygen -t rsa –C “rockinghl@163.com”//密匙，需要授权的话，可再打该命令Git上传/推送git init//初始化成可管理的本地仓库 ，跟踪管理版本git add xxx//添加文件到暂存区 （如svn的添加）git add .​ //添加所有未修改的文件（有空格 + 点号）git commit -m “注释信息”//可中文 空格git status//查看状态初次修改前需要pull ，之后每次提交需要查看释义：在主支干上，有工作记录未提交git remote add origin https://github.com/qq552743/qq552743.github.io//连接远程仓库git push -u origin master//把本地内容提交到远程仓库的主干上git push origin master加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。eg:git diff readme.txt​ //查看文件如上可以看到，readme.txt文件内容从一行11111111改成 二行 添加了一行22222222内容。cat xxxxx.xxx//查看文件内容git log//查看历史信息rm//删除命令 需要删下层得进入文件夹下git checkout – xxx//恢复命令下载/克隆/拉取git clone https://github.com/qq552743/qq552743.github.io//拉取这是基于有环境下，如果无环境，需要走安装步骤eg:https://blog.csdn.net/baozhiqiangjava/article/details/81106046?utm_source=blogxgwz3分支git branch xx//查看当前连接分支git branch -a//查看所有分支git branch hexo//创建分支git checkout -b hexo//创建+切换 到该hexo分支git checkout master \ hexo//切换到主分支 \ 分支git merge xxx//合并某分支内容到当前*分支上git branch -d xxx//删除分支其他注意项git pull –rebase origin master在你准备上传你的项目之前，最好更新一下项目，确保没有和远程仓库的代码有冲突]]></content>
+    <title><![CDATA[Hexo新电脑上怎么更新博客]]></title>
+    <url>%2Fposts%2F3de189b.html</url>
+    <content type="text"><![CDATA[[TOC]大佬整理的链接：https://blog.csdn.net/a3212/article/details/80095758参考资料：https://www.zhihu.com/question/21193762http://fangzh.top/2018/2018090715/ （详细）一、引言其实，Hexo生成的文件里面是有一个.gitignore的，所以它的本意应该也是想我们把这些文件放到GitHub上存放的。但是考虑到如果每个GitHub Pages都需要额外的一个仓库存放这些文件，就显得特别冗余了。这个时候就可以用分支的思路！一个分支用来存放Hexo生成的网站原始的文件，另一个分支用来存放生成的静态网页。二、搭建的流程创建仓库，qq552743.github.io;创建两个分支：master 与 hexo；设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；Settings–&gt;branches–&gt;default branch;使用git clone https://github.com/qq552743/qq552743.github.io.git 拷贝仓库；_config.yml，theme/，source/，scaffolds/，package.json，.gitignore ,源拷贝进来.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除，别拷贝进来在本地qq552743.github.io 文件夹下通过Git bash依次执行npm install hexo、-hexo init-、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）;执行完如果不慎删除。git文件，（最好不要初始化），需要再重新建个git init, git checkout -b hexo分支就好了（window下）修改_config.yml中的deploy参数，分支应为master；依次执行git add .、git commit -m “source first”、git push origin hexo提交网站相关的文件；执行hexo g -d生成网站并部署到GitHub上。这样一来，在GitHub上的仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y！ + nice！其他：部署前需要安装的插件1、为了建立RSS订阅，需要安装npm install hexo-generator-feed –save2、为了建立站点地图，需要安装npm install hexo-generator-sitemap –save三、日常的改动流程在本地对博客进行修改、添加新博文、修改样式等等可以参照以下流程：依次执行git add .、git commit -m “…”、git push origin hexo指令将改动推送到GitHub（此时当前分支应为hexo）；然后才执行hexo g -d发布网站到master分支上。虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催…的情况，调转顺序就有问题了）。四、拉取备份本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤：使用git clone https://github.com/qq552743/qq552743.github.io.git 拷贝仓库（默认分支为hexo）；在本地新拷贝的http://catalinaLi.github.io 文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。五、其他存储方式1.码云上存储源码 思路与github一样2.网盘、U盘拷贝四大金刚，依次执行操作后再进行写博客六、其他问题（error）1、缺少git repository解决办法：ssh key 相关2、hexo init会把 .git 干掉，再git init的话，就不能push了。。这个怎么弄呀？解决办法1：先把.git文件夹复制到其它目录，git init 完后，再把.git文件夹拷回来解决办法2：git rm -rf –cached themes/主题名,除原本仓库的git记录,之后在作为普通文件夹添加(commit)3、next主题到仓库里，打不开解决办法：由于文件里面有。git文件导致]]></content>
       <categories>
         <category>Hexo</category>
         <category>Git</category>
